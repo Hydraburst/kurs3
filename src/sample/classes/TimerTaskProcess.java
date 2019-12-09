@@ -6,7 +6,7 @@ import java.util.TimerTask;
 
 public class TimerTaskProcess extends TimerTask {
     private Processes processes;
-    private GenatingOfProcess generateProcesses = new GenatingOfProcess();
+    private GeneratingOfProcess generateProcesses = new GeneratingOfProcess();
 
 
     public TimerTaskProcess(Processes processes){

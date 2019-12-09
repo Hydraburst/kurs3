@@ -19,7 +19,7 @@ public class Processes{
         this.memoryScheduler = memoryScheduler;
     }
 
-    public void CheckByPriority(){
+    public void PriorityCheck(){
         Process runningProcess = null;
 
         for (Process process:getList()) {
@@ -40,7 +40,7 @@ public class Processes{
         }
     }
 
-    public Process procMinPriority(){
+    public Process Priority(){
         int minPriority=31;
         Process currentProcess = null;
         for (Process process:getList()) {
@@ -54,7 +54,7 @@ public class Processes{
 
 
     public void Work() throws InterruptedException {
-        Process currentProcess = procMinPriority();
+        Process currentProcess = Priority();
         queue = new Queue(memoryScheduler);
         if(currentProcess!=null) {
             if (queue.add(currentProcess)) {

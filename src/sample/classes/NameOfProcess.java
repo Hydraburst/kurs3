@@ -9,10 +9,10 @@ public class NameOfProcess {
 
     public NameOfProcess(){
 
-        processNames.add("Оpening");
-        processNames.add("Start");
-        processNames.add("Off");
-        processNames.add("Closing");
+        processNames.add("p1");
+        processNames.add("p2");
+        processNames.add("p3");
+        processNames.add("p4");
     }
 
     public String getRandomProcessName(){

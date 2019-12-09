@@ -2,7 +2,7 @@ package sample.classes;
 
 import sample.Controller;
 
-public class GenatingOfProcess {
+public class GeneratingOfProcess {
     private int id=0;
 
     public void generate(Processes processes) {
